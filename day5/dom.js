@@ -15,3 +15,6 @@ document.querySelector('h1').style.backgroundColor="red"
 function changeColor(){
     document.querySelector("button").style.backgroundColor="green"
 }
+function toggleSidebar(){
+    document.querySelector(".sidebar").classList.toggle("open")
+}

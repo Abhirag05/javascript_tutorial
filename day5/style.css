@@ -1,0 +1,13 @@
+.sidebar{
+    position: fixed;
+    background-color: #f1f1f1;
+    width: 200px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    display:none;
+
+}
+.open.sidebar{
+    display:block;
+}
