@@ -11,3 +11,7 @@ document.querySelector('h1').innerHTML="Welcome to dom"
 
 //changing css
 document.querySelector('h1').style.backgroundColor="red"
+
+function changeColor(){
+    document.querySelector("button").style.backgroundColor="green"
+}
