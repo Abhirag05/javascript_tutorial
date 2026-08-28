@@ -1,4 +1,4 @@
-function signUp(
+/*function signUp(
     email,
     password,
     name,
@@ -23,4 +23,21 @@ function signUp(
 }
 
 signUp('none123@gmail.com','none123','none','noneyt','premium',[1,2,3])
-signUp('none123@gmail.com','none123','none','noneyt','premium',[1,2,3])
+signUp('none123@gmail.com','none123','none','noneyt','premium',[1,2,3]) */
+
+
+//best practice
+let users=[]
+function signUp(user){
+    users.push(user)
+}
+
+signUp({
+    email:'none123@gmail.com',
+    password:'none123',
+    name:'none',
+    discord:'noneyt',
+    subscription:'premium',
+    lessonCompleted:[1,2,3]
+})
+console.log(users);
