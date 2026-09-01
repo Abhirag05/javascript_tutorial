@@ -11,3 +11,10 @@ const person = {
 person.greet(); // Output: Hello, my name is John and I am 25 years old.
 
 //this keyword refers to the current object, allowing access to its properties and methods.
+
+//object destructuring allows you to extract properties from an object and assign them to variables.
+const { name, age, city } = person;
+
+console.log(name); // John
+console.log(age);  // 25
+console.log(city); // London
