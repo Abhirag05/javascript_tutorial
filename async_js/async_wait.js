@@ -18,3 +18,17 @@ getUser();
 console.log("After");
 
 //notice here that the getUser function is declared as asynchronous using the async keyword. Inside the function, we are using the await keyword to wait for the fetch function to resolve before moving on to the next line of code. This allows us to write asynchronous code in a synchronous manner and makes it more readable.
+
+
+//we can use promis and await together in scenarios where we need multiple apis need to be fetched and to display together
+//example:
+async function getUserAndPosts() {
+    const [users, posts] = await Promise.all([
+        fetch("https://jsonplaceholder.typicode.com/users"),
+        fetch("https://jsonplaceholder.typicode.com/posts")
+    ]);
+    console.log("Users:", users);
+    console.log("Posts:", posts);
+}
+
+getUserAndPosts();
