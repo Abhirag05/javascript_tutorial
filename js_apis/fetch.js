@@ -6,7 +6,7 @@
 
 async function fetchData() {//async tells the function to return a Promise and allows the use of await inside it. 
     const response = await fetch('https://jsonplaceholder.typicodeode.com/posts/1');//await is used to pause the execution of the function after the fetch() call until the Promise returned by fetch() is resolved. 
-    const data = await response.json();//here the response is converted to json format using the json() method of the Response object. This method returns a Promise that resolves to the parsed JSON data.
+    const data = await response.json();//here from the response we read the response body, parses it as JSON, and returns a Promise that resolves to the resulting JavaScript value.
     console.log(data);
 }
 
