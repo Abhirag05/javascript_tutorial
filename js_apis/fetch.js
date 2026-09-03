@@ -72,6 +72,11 @@ async function PutData() {
             },
             body: JSON.stringify({ id: 1, title: 'foo', body: 'bar', userId: 1 })
         });
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        console.log(data);
     } catch (error) {
         console.error('Error putting data:', error);
     }
